@@ -4,19 +4,23 @@
 #include "Joueur.hh"
 #include "Action.hh"
 #include "Plateau.hh"
+#include "Pierre.hh"
+#include "PierreNames.hh"
 
 
 
 
 int main(){
-    Joueur j1;
-    Joueur j2;
-    j2.ReduirePointDeVie();
     Plateau plateau;
-    plateau.ClearPlateau();
+    plateau.AddPlayers(4);
+    plateau.AddPierre();
+    plateau.AddPierre();
+    plateau.DisplayPlateau();
+
+    plateau.KillPlayer(4);
+    std::cout << "killed someone ..." << std::endl;
+    plateau.KillLoosers();
     plateau.DisplayPlateau();
 
 
-
-    
 }

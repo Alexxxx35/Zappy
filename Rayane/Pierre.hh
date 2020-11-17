@@ -11,12 +11,11 @@ const int _pos;
 
 
 public:
-Pierre(PierreNames type,int pos);
+Pierre(PierreNames,int);
 ~Pierre();
 PierreNames GetType();
 int GetPos();
-int id;
-
+char ToChar();
 
 };
 #endif

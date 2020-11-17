@@ -3,6 +3,7 @@
 #include "Orientation.hh"
 #include <algorithm>
 #include <string>
+#include "Action.hh"
 
 class Joueur {
     private:
@@ -11,11 +12,14 @@ class Joueur {
     int _pdvie;
     int _pdvictoire;
     Orientation _orientation;
+    int _id;
+    std::vector<Action> _actions;
 
     public :
     Joueur();
     ~Joueur();
-    int id;
+    
+    int GetId();
     int GetEnergie();
     int GetVie();
     int GetVictoire();
@@ -25,6 +29,7 @@ class Joueur {
     void AugmenterPointDeVie();
     void AugmenterPointDeVictoire();
     void ReduirePointDeVie();
+    void TAMERE (); // fonction pour tester des trucs
     
 };
 

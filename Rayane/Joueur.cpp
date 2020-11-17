@@ -7,7 +7,7 @@
 int Joueur::nextID = 0;
 
 Joueur::Joueur(): _energie(2),_pdvie(10),_pdvictoire(0){
-    id = ++nextID;
+    _id = ++nextID;
     int v =  std::experimental::randint((int) Orientation::North, (int) Orientation::West);
     this->_orientation = Orientation(v);
 
@@ -16,6 +16,10 @@ Joueur::~Joueur(){
     std::cout << "Je meurs ..." << std::endl;
 }
 
+
+int Joueur::GetId(){
+    return this->_id;
+}
 
 int Joueur::GetEnergie(){
     return this->_energie;
@@ -48,6 +52,10 @@ void Joueur::AugmenterPointDeVictoire(){
 
 void Joueur::ResetEnergie(){
     this->_energie =2;
+}
+
+void Joueur::TAMERE(){
+    _pdvie =0;
 }
 
 

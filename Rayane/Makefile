@@ -1,4 +1,4 @@
-SRC = main.cpp Joueur.cpp Action.cpp Plateau.cpp
+SRC = main.cpp Joueur.cpp Action.cpp Plateau.cpp Pierre.cpp
 OBJ = $(SRC:%.cpp=%.o)
 NAME = exec
 CXX = g++
