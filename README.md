@@ -4,7 +4,7 @@ Exécutez les commandes suivantes:
 
 ```sh
 $ cd Redha+Alex
-$ g++ -o serveur CliServer.cpp
+$ g++ -std=c++11 -pthread -o server CliServer.cpp
 $ ./serveur
 $ g++ -o client CliClient.cpp
 $ ./client

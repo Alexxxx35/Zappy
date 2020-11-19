@@ -11,9 +11,9 @@ using namespace std;
 
 class Server {
 public:
-    void runServer(const char *hostname, long port);
-    void readBuffer(int sockfd);
-    string processMessage(char message[]);
+    static int runServer(const char *hostname, long port);
+    static void readBuffer(int sockfd);
+    static string processMessage(char message[]);
 };
 
 
