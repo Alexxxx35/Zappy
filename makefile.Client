@@ -1,8 +1,7 @@
-SRC = main.cpp Joueur.cpp Action.cpp Plateau.cpp Pierre.cpp
+SRC = Client.cpp Joueur.cpp Action.cpp Pierre.cpp
 OBJ = $(SRC:%.cpp=%.o)
-NAME = exec
-CXX = g++
-CXXFLAGS = -Wall -Wextra -Wpedantic -Werror -std=c++14
+NAME = Client
+CXX = g++ -Wall -Wextra -Wpedantic -Werror -std=c++14 
 RM = rm -f
 all: $(NAME)
 $(NAME):	$(OBJ)
@@ -15,3 +14,4 @@ fclean:	clean
 	
 re:	fclean all
 .PHONY: all clean flean re
+

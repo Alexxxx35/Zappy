@@ -1,15 +1,31 @@
-# Comment exécuter
+# Groupe de boury_a
 
+# Zappy
+Zappy est un jeu multijoueur. Les joueurs évoluent dans un plateau de taille fixe dans lequel ils peuvent se déplacer soit pour collecter des pierres donnant des avantages soit pour attaquer directement leurs adversaires ...
+
+## Librairies utilisées :
+https://github.com/nlohmann/json
+
+## Installation 
+git clone git@rendu-git.etna-alternance.net:module-7281/activity-40253/group-831356
+
+## Comment exécuter
 Exécutez les commandes suivantes:
 
 ```sh
-$ cd Redha+Alex
-$ g++ -std=c++11 -pthread -o server CliServer.cpp
-$ ./serveur
-$ g++ -o client CliClient.cpp
-$ ./client
+$ make Client
+$ make Server
+```
+## Pour lancer le serveur :
+
+```sh
+$ ./Server --map-height --map-width --players --help
 ```
 
-Une fois que le serveur et le client sont connectés, pour le moment nous pouvons envoyer manuellement un message au 
-serveur et le serveur répondra, par exemple vous pouvez taper "left" le serveur renverra un simple message statique.
+## Pour lancer un client :
+```sh
+$ ./Client
+```
+
+
 

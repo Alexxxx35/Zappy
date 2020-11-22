@@ -15,8 +15,8 @@ class Action {
 
     ActionNames GetAction();
     int GetCost();
-
     std::string toString();
+    static ActionNames ActionFromChar(char*);
 
 };
 

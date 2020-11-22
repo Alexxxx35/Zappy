@@ -17,12 +17,23 @@ class Plateau{
     void ClearPlateau();
     void DisplayPlateau();
     void AddPlayer();
+    void AddPlayer(Joueur*);
     void AddPlayers(int);
     void AddPierre();
     bool IsFull();
     bool IsVictory();
     void KillLoosers();
     void KillPlayer(int); // fonction de test
+    void MoveFwd(Joueur*);
+    void MoveBack(Joueur*);
+    void MoveJump(Joueur*);
+    int FindPosition(Joueur*);
+    void ExecuteAction(Joueur*,Action);
+    void ExecuteActions(Joueur*);
+    void ConsumeObject(Joueur*,Pierre*);
+    void run();
+    Joueur* GetPlayerById(int);
+    int GetPlayerNumber();
 
 
     private:
@@ -35,6 +46,7 @@ class Plateau{
     std::vector<int> freePositions;
 
     int GetRandomFreePosition();
+    void removeFreePosition(int);
 
 
 

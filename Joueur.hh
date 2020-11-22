@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 #include "Action.hh"
+#include<bits/stdc++.h>
 
 class Joueur {
     private:
@@ -13,7 +14,10 @@ class Joueur {
     int _pdvictoire;
     Orientation _orientation;
     int _id;
-    std::vector<Action> _actions;
+    std::queue<Action> _actions;
+    int _energieConsumed;
+
+    
 
     public :
     Joueur();
@@ -24,12 +28,17 @@ class Joueur {
     int GetVie();
     int GetVictoire();
     Orientation GetOrientation();
-
-    void ResetEnergie();
+    std::string GetOrientationStr();
+    std::queue<Action> GetQueue();
+    void ResetTour();
     void AugmenterPointDeVie();
     void AugmenterPointDeVictoire();
     void ReduirePointDeVie();
-    void TAMERE (); // fonction pour tester des trucs
+    void TurnLeft();
+    void TurnRight();
+    void QueueRandomAction();
+    void QueueRandomActions();
+    void ConsumeEnergie(int);
     
 };
 
