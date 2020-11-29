@@ -7,7 +7,7 @@ Zappy est un jeu multijoueur. Les joueurs évoluent dans un plateau de taille fi
 https://github.com/nlohmann/json
 
 ## Installation 
-git clone git@rendu-git.etna-alternance.net:module-7281/activity-40253/group-831356
+git clone
 
 ## Comment exécuter
 Exécutez les commandes suivantes:
